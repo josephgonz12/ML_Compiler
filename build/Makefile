@@ -129,12 +129,98 @@ test_matrix/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix.dir/build.make CMakeFiles/test_matrix.dir/build
 .PHONY : test_matrix/fast
 
+#=============================================================================
+# Target rules for targets named run_engine
+
+# Build rule for target.
+run_engine: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_engine
+.PHONY : run_engine
+
+# fast build rule for target.
+run_engine/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/build
+.PHONY : run_engine/fast
+
+src/activation.o: src/activation.cpp.o
+.PHONY : src/activation.o
+
+# target to build an object file
+src/activation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/activation.cpp.o
+.PHONY : src/activation.cpp.o
+
+src/activation.i: src/activation.cpp.i
+.PHONY : src/activation.i
+
+# target to preprocess a source file
+src/activation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/activation.cpp.i
+.PHONY : src/activation.cpp.i
+
+src/activation.s: src/activation.cpp.s
+.PHONY : src/activation.s
+
+# target to generate assembly for a file
+src/activation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/activation.cpp.s
+.PHONY : src/activation.cpp.s
+
+src/dense.o: src/dense.cpp.o
+.PHONY : src/dense.o
+
+# target to build an object file
+src/dense.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/dense.cpp.o
+.PHONY : src/dense.cpp.o
+
+src/dense.i: src/dense.cpp.i
+.PHONY : src/dense.i
+
+# target to preprocess a source file
+src/dense.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/dense.cpp.i
+.PHONY : src/dense.cpp.i
+
+src/dense.s: src/dense.cpp.s
+.PHONY : src/dense.s
+
+# target to generate assembly for a file
+src/dense.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/dense.cpp.s
+.PHONY : src/dense.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 src/matrix.o: src/matrix.cpp.o
 .PHONY : src/matrix.o
 
 # target to build an object file
 src/matrix.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix.dir/build.make CMakeFiles/test_matrix.dir/src/matrix.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/matrix.cpp.o
 .PHONY : src/matrix.cpp.o
 
 src/matrix.i: src/matrix.cpp.i
@@ -143,6 +229,7 @@ src/matrix.i: src/matrix.cpp.i
 # target to preprocess a source file
 src/matrix.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix.dir/build.make CMakeFiles/test_matrix.dir/src/matrix.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/matrix.cpp.i
 .PHONY : src/matrix.cpp.i
 
 src/matrix.s: src/matrix.cpp.s
@@ -151,7 +238,32 @@ src/matrix.s: src/matrix.cpp.s
 # target to generate assembly for a file
 src/matrix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_matrix.dir/build.make CMakeFiles/test_matrix.dir/src/matrix.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/matrix.cpp.s
 .PHONY : src/matrix.cpp.s
+
+src/model.o: src/model.cpp.o
+.PHONY : src/model.o
+
+# target to build an object file
+src/model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/model.cpp.o
+.PHONY : src/model.cpp.o
+
+src/model.i: src/model.cpp.i
+.PHONY : src/model.i
+
+# target to preprocess a source file
+src/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/model.cpp.i
+.PHONY : src/model.cpp.i
+
+src/model.s: src/model.cpp.s
+.PHONY : src/model.s
+
+# target to generate assembly for a file
+src/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_engine.dir/build.make CMakeFiles/run_engine.dir/src/model.cpp.s
+.PHONY : src/model.cpp.s
 
 tests/test_matrix.o: tests/test_matrix.cpp.o
 .PHONY : tests/test_matrix.o
@@ -185,10 +297,23 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... run_engine"
 	@echo "... test_matrix"
+	@echo "... src/activation.o"
+	@echo "... src/activation.i"
+	@echo "... src/activation.s"
+	@echo "... src/dense.o"
+	@echo "... src/dense.i"
+	@echo "... src/dense.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/matrix.o"
 	@echo "... src/matrix.i"
 	@echo "... src/matrix.s"
+	@echo "... src/model.o"
+	@echo "... src/model.i"
+	@echo "... src/model.s"
 	@echo "... tests/test_matrix.o"
 	@echo "... tests/test_matrix.i"
 	@echo "... tests/test_matrix.s"
